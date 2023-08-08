@@ -5,6 +5,12 @@
 
   networking = {
     hostName = "${host}"; # Define your hostname.
+    nameservers = [ 
+      "101.226.4.6"       # 电信 DNS
+      "123.125.81.6"      # 联通 DNS
+      "101.226.4.6"       # 移动 DNS
+      "8.8.8.8" "8.8.4.4" # google DNS
+    ];
     hosts = {
       "202.89.233.100" = [ "cn.bing.com" ];
       "104.21.55.199"  = [ "doget-api.oopscloud.xyz" ];
