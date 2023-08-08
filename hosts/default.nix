@@ -15,6 +15,7 @@ in
       ./system.nix
       ./laptop
     ] ++ [
+      inputs.hyprland.nixosModules.default
       inputs.home-manager.nixosModules.home-manager {
         home-manager = {
           useGlobalPkgs = true;

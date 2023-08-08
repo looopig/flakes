@@ -6,12 +6,8 @@
   networking = {
     hostName = "${host}"; # Define your hostname.
     hosts = {
-      "185.199.109.133" = [ "raw.githubusercontent.com" ];
-      "185.199.111.133" = [ "raw.githubusercontent.com" ];
-      "185.199.110.133" = [ "raw.githubusercontent.com" ];
-      "185.199.108.133" = [ "raw.githubusercontent.com" ];
-      "173.195.146.142" = [ "git.sr.ht" ];
-      "20.27.177.113"   = [ "github.com" ];
+      "202.89.233.100" = [ "cn.bing.com" ];
+      "104.21.55.199"  = [ "doget-api.oopscloud.xyz" ];
     };
   };
   
@@ -29,7 +25,9 @@
     ];
   };
   
-  services.openssh.enable = true;
+  services = {
+    openssh.enable = true;
+  };
 
   security = {
     sudo.enable = false;

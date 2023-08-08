@@ -24,6 +24,9 @@
       url = "github:hyprwm/Hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprpicker.url = "github:hyprwm/hyprpicker";
+    hypr-contrib.url = "github:hyprwm/contrib";
+
     home-manager = {
       url = "github:nix-community/home-manager/release-23.05";
       inputs.nixpkgs.follows = "nixpkgs";

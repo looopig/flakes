@@ -1,0 +1,6 @@
+[
+  ./firefox
+  ./neofetch
+  ./wezterm
+  ./obsidian
+]

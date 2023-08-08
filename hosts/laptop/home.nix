@@ -1,12 +1,18 @@
-{ user, ... }:
+{ config, lib, pkgs, user, ... }:
 
 {
   imports = 
     ( import ../../modules/shell ) ++
+    ( import ../../modules/programs ) ++
     [( import ../../modules/desktop/hyprland/home.nix )];
   home = {
     username = "${user}";
     homeDirectory = "/home/${user}";
+    pointerCursor = {
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Classic";
+      size = 32;
+    };
   };
   
   # This value determines the Home Manager release that your
